@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "lib": ["esnext", "dom"],
+    "jsx": "react",
+    "strict": true,
+    "allowJs": true,
+    "downlevelIteration": true,
+    "sourceMap": true
+  }
+}

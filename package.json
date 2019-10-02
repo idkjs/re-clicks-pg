@@ -1,0 +1,42 @@
+{
+	"name": "re-clicks-pg",
+	"version": "0.1.0",
+	"scripts": {
+		"build": "bsb -make-world",
+		"start": "bsb -make-world -w",
+		"clean": "bsb -clean-world",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"webpack": "webpack -w",
+		"webpack:production": "NODE_ENV=production webpack",
+		"start:gql": "cd server && yarn && webpack-dev-server -w --hot",
+    "server": "webpack-dev-server",
+    "schema": "yarn send-introspection-query http://localhost:3000/graphql"
+	},
+	"keywords": [
+		"BuckleScript"
+	],
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"@apollo/react-hooks": "3.1.2",
+		"react": "^16.8.1",
+		"react-dom": "^16.8.1",
+		"reason-apollo": "0.17.0",
+		"reason-apollo-hooks": "2.6.0",
+		"reason-react": ">=0.7.0"
+	},
+	"devDependencies": {
+		"babel-loader": "^8.0.6",
+		"bs-platform": "^5.2.0",
+		"css-loader": "^3.2.0",
+		"favicons-webpack-plugin": "^1.0.2",
+		"graphql_ppx": "0.2.8",
+		"html-webpack-plugin": "^3.2.0",
+		"node-sass": "4.12.0",
+		"sass-loader": "^7.3.1",
+		"style-loader": "^1.0.0",
+		"webpack": "^4.0.1",
+		"webpack-cli": "^3.1.1",
+		"webpack-dev-server": "^3.1.8"
+	}
+}
